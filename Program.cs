@@ -21,36 +21,13 @@ namespace Exercise2
             vowels.Add("O");
             vowels.Add("U");
             aVowel = false;
-            foreach(string vowel in vowels)
-            {
-                if(vowel == character)
-                {
-                    aVowel = true;
-                }
-            }
+
+            aVowel = vowels.Contains(character);
 
             return aVowel;
 
         }
-        public static bool IsVowel1(string character)
-        {
-            bool aVowel;
-            aVowel = false;
-            switch (character)
-            {
-                case "a": aVowel = true; break;
-                case "e": aVowel = true; break;
-                case "i": aVowel = true; break;
-                case "o": aVowel = true; break;
-                case "u": aVowel = true; break;
-                case "A": aVowel = true; break;
-                case "E": aVowel = true; break;
-                case "I": aVowel = true; break;
-                case "O": aVowel = true; break;
-                case "U": aVowel = true; break;
-            }
-            return aVowel;
-        }
+        
         static void Main(string[] args)
         {   
             Console.WriteLine("Input a text:");
