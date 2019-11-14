@@ -1,11 +1,38 @@
 ﻿using System;
 using System.Text;
+using System.Collections.Generic;
 
 namespace Exercise2
 {
     class Program
     {
         public static bool IsVowel(string character)
+        {
+            bool aVowel;
+            List<String> vowels = new List<string>();
+            vowels.Add("a");
+            vowels.Add("e");
+            vowels.Add("i");
+            vowels.Add("o");
+            vowels.Add("u");
+            vowels.Add("A");
+            vowels.Add("E");
+            vowels.Add("I");
+            vowels.Add("O");
+            vowels.Add("U");
+            aVowel = false;
+            foreach(string vowel in vowels)
+            {
+                if(vowel == character)
+                {
+                    aVowel = true;
+                }
+            }
+
+            return aVowel;
+
+        }
+        public static bool IsVowel1(string character)
         {
             bool aVowel;
             aVowel = false;
