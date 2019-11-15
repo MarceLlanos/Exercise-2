@@ -6,45 +6,15 @@ namespace Exercise2
 {
     class Program
     {
-        public static bool IsVowel(string character)
-        {
-            bool aVowel;
-            List<String> vowels = new List<string>();
-            vowels.Add("a");
-            vowels.Add("e");
-            vowels.Add("i");
-            vowels.Add("o");
-            vowels.Add("u");
-            vowels.Add("A");
-            vowels.Add("E");
-            vowels.Add("I");
-            vowels.Add("O");
-            vowels.Add("U");
-            aVowel = false;
 
-            aVowel = vowels.Contains(character);
-
-            return aVowel;
-
-        }
         
-        static void Main(string[] args)
-        {   
+        public static void Main(String[] args)
+        {
             Console.WriteLine("Input a text:");
             String text;
             text = Console.ReadLine();
-            StringBuilder builder = new StringBuilder(text);
-
-            int length = text.Length - 1;
-
-            foreach (char character in text)
-            {
-                if (IsVowel(character.ToString()) == true)
-                {
-                    builder.Replace(character.ToString(), "");
-                }
-            }
-            Console.Write(builder);
+            VowelOut vowel = new VowelOut();
+            Console.Write(vowel.IsThereVowels(text));
             Console.ReadKey();
         }
     }

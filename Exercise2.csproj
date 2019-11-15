@@ -42,8 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CatalogString.cs" />
+    <Compile Include="IAddToCatalog.cs" />
+    <Compile Include="IIsInCatalog.cs" />
+    <Compile Include="IsInCatalog.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VowelOut.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
