@@ -8,7 +8,6 @@ namespace Exercise2
 {
     public interface IIsInCatalog
     {
-        bool IsInCatalog(string text);
-        string IsThereVowels(string text);
+        string RemoveVowels(string text);
     }
 }

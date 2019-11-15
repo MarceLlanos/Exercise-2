@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Exercise2
 {
-    public interface IAddToCatalog
+    public class Catalog : IAddToCatalog
     {
-        string GetCatalog();
+        public string GetCatalog()
+        {
+            return "n ";
+        }
     }
-
 }
