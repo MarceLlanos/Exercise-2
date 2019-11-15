@@ -1,6 +1,7 @@
 C:\Users\marcela.llanos\source\repos\Exercise2\Exercise2\bin\Debug\Exercise2.exe.config
 C:\Users\marcela.llanos\source\repos\Exercise2\Exercise2\bin\Debug\Exercise2.exe
 C:\Users\marcela.llanos\source\repos\Exercise2\Exercise2\bin\Debug\Exercise2.pdb
+C:\Users\marcela.llanos\source\repos\Exercise2\Exercise2\obj\Debug\Exercise2.csprojAssemblyReference.cache
 C:\Users\marcela.llanos\source\repos\Exercise2\Exercise2\obj\Debug\Exercise2.csproj.CoreCompileInputs.cache
 C:\Users\marcela.llanos\source\repos\Exercise2\Exercise2\obj\Debug\Exercise2.exe
 C:\Users\marcela.llanos\source\repos\Exercise2\Exercise2\obj\Debug\Exercise2.pdb
