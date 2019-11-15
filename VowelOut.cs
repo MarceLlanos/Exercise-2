@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercise2
 {
-    class VowelOut: IIsInCatalog, IAddToCatalog
+    public class VowelOut: IIsInCatalog, IAddToCatalog
     {
 
         public List<string> AddToCatalog()
