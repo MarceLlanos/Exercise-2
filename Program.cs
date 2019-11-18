@@ -10,27 +10,27 @@ namespace Exercise2
         
         public static void Main(String[] args)
         {
-            VowelRemover vowelOut = new VowelRemover();
-            Catalog removerNEsp = new Catalog();
-
-            string option;
             Console.Write("Input a Text:");
             string text;
             text = Console.ReadLine();
 
-            Console.WriteLine("Do you want to remove vowel write 1 if you want to remove 'n' and 'spaces' write 2:", vowelOut, removerNEsp);
+            Console.WriteLine("For remove the vowels write '1', and for remove the 'n/N' and spaces write '2'");
+            string option;
             option = Console.ReadLine();
-            var result= String.Empty;
+
+            var result = string.Empty;
+            RemoveCharacter removeCharacter = new RemoveCharacter();
+            ICatalog vowelsCatalog = new VowelsCatalog();
+            ICatalog specialCatalog = new SpecialCatalog();
             
             if (option == "1")
             {
-               result= vowelOut.RemoveVowels(text);
+                result = removeCharacter.CharacterRemove(vowelsCatalog.GetCatalog(), text);
             }
             if(option == "2")
             {
-               result= vowelOut.RemoveNEsp(text);
+                result = removeCharacter.CharacterRemove(specialCatalog.GetCatalog(), text);
             }
-
 
             Console.Write(result);
             Console.ReadKey();

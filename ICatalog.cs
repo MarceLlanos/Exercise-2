@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Exercise2
 {
-    public interface IIsInCatalog
+    public interface ICatalog
     {
-        string RemoveVowels(string text);
+        string GetCatalog();
     }
 }
