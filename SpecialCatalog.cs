@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercise2
 {
-    public class Catalog : IAddToCatalog
+    public class SpecialCatalog : ICatalog
     {
         public string GetCatalog()
         {
